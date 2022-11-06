@@ -1,11 +1,14 @@
 function searchList()
 {
+    var result = document.getElementById("result");
+    var val = document.getElementById("hero-input");
+    console.log("hello")
     var req = new XMLHttpRequest();
     req.onreadystatechange = function() {
         if(req.readyState === XMLHttpRequest.DONE){
             if(req.status === 200)
             {
-                alert(req.responseText)
+                result.innerHTML = req.responseText
             } 
             else
             {
@@ -13,9 +16,8 @@ function searchList()
             }
         }
     }
+    req.open("GET",`http://localhost/info2180-lab4/superheroes.php?query=${val.value}`,false)
 
-    req.open('GET',"http://localhost/info2180-lab4/superheroes.php",true)
-    req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     req.send();
 }
 

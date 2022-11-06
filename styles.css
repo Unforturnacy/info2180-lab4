@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "NotoSans", sans-serif;
+    background-color: ghostwhite;
+    letter-spacing: 1.5px;
+  }
+  
+
+  header .container {
+    display: flex;
+    align-items: center;
+    background-color:cornflowerblue;
+    margin: 10px;
+    justify-content: center;
+    height: 150px;
+  }
+
+  .container h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 25x;
+  }
+
+  main .container {
+    background-color:cornflowerblue;
+    margin: 10px 100px 10px 100px;
+    height: 150px;
+    height: auto;
+    padding: 20px;
+  }
+
+  #hero-input{
+    width: 65%;
+    height: 40px;
+  }
+
+  #search-btn{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(250, 90, 90);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  
+#resultt{
+    color: black;
+}
+
+#result{
+margin: 10px;
+font-size: 20px;
+padding:5px;
+color: white;
+border-top: 1px black solid;
+}

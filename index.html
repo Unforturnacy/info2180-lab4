@@ -8,19 +8,22 @@
     <title>Avengers Character Search</title>
 </head>
 <body>
-    <div class="container">
-
-        <header>
+    <header>
+        <div class="container">
             <h1>Avengers Character Search</h1>
-        </header>
-
-        <main>
-            <form>
-                <input id ="hero-input" name="search" type="text" placeholder="Search" />
-                <button name ="searchbtn" id="search-btn" type ="submit">Search</button>
-            </form>
-        </main>
-
+        </div>
+    </header>
+    <main>
+        <div class="container">
+        <h4 id = "search">Search by Full Name or Alias</h4>
+        <form>
+            <input id ="hero-input" name="search" type="text" placeholder="e.g Captain America or Steve Rodgers" />
+            <button name ="searchbtn" id="search-btn" type ="button">Search</button>
+        </form>
+        <h1 id = "resultt">RESULT</h1>
+        <div id="result"></div>
     </div>
+    </main>
+
 </body>
 </html>
